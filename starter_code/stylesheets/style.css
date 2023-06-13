@@ -9,93 +9,132 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-@media (max-with:768px) and (orientation= landscape);
+@media (max-width: 768px) and (orientation: portrait){
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-.navigation{
-    display:flex;
+.navigation {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #540B51 ;
-}
+    background-color: #540b51;
+  }
 
-.slackLogo{
-    width: 150px;
+  .slackLogo {
+    width: 120px;
     padding: 40px 40px;
-    
-}
+  }
 
-.hidden{
+  .hidden {
     display: none;
-}
+  }
 
-.navButtons{
-    display:flex;
+  .navButtons {
+    display: flex;
     padding: 40px 40px;
     justify-content: space-around;
-}
+  }
 
-.navButtons button{
+  .navButtons button {
     background: none;
-    border:none;
-}
+    border: none;
+  }
 
-.header{
-
+  .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #540B51 ;
-    
-}
+    background-color: #540b51;
+  }
 
-.button{
-    display:flex;
+  .header-buttons {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-}
+    min-width: 95%;
+  }
 
-.header h1{
-color: white;
-}
+  .header h1 {
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    padding: 0px 30px;
+  }
 
-.header span{
-    color:yellow;
-}
+  .header span {
+    color: yellow;
+    font-size: 25px;
+    padding-top: 0px;
+  }
 
-.header p{
-    color:white;
-}
+  .header p {
+    color: white;
+    font-size: 25px;
+    padding-top: 0px;
+  }
 
-.emailSignIn{
+  .header-buttons button {
+    padding: 20px 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .emailSignIn {
     background-color: white;
-    padding: 10px;
-    margin:10px;
-    border:none;
-    border-radius:5px ;
-    color:#540B51;
+    color: #540b51;
     font-weight: bold;
-   
-}
+    font-size: 20px;
+    text-transform: uppercase;
+  }
 
-.googleSignIn{
+  .googleSignIn {
     display: flex;
     flex-direction: row;
-    background-color: #4285F4;
-    padding: 10px;
-    margin:10px;
-    border:none;
-    border-radius:5px ;
+    background-color: #4285f4;
     align-content: flex-start;
-   
-}
+    align-items: center;
+  }
 
-.googleSignIn span{
-    color:white;
-    font-weight: bold;
-}
+  .googleSignIn span {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 100%;
+  }
 
-.googleSignIn img{
+  .googleSignIn img {
     background-color: white;
-    width: 15px;
-}
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    position: absolute;
+  }
+
+  .slack-screenshot{
+    max-width: 720px;
+  }
+
+  .trusted-section{
+    background-color: #F4EDE4;
+    padding: 50px 0px;
+  }
+
+  .trusted-section p{
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .trusted-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .trusted-images img{
+    max-height: 50px;
+    margin: 10px;
+  }
+} 
