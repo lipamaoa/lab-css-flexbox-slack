@@ -8,3 +8,94 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+@media (max-with:768px) and (orientation= landscape);
+
+.navigation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #540B51 ;
+}
+
+.slackLogo{
+    width: 150px;
+    padding: 40px 40px;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.navButtons{
+    display:flex;
+    padding: 40px 40px;
+    justify-content: space-around;
+}
+
+.navButtons button{
+    background: none;
+    border:none;
+}
+
+.header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #540B51 ;
+    
+}
+
+.button{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.header h1{
+color: white;
+}
+
+.header span{
+    color:yellow;
+}
+
+.header p{
+    color:white;
+}
+
+.emailSignIn{
+    background-color: white;
+    padding: 10px;
+    margin:10px;
+    border:none;
+    border-radius:5px ;
+    color:#540B51;
+    font-weight: bold;
+   
+}
+
+.googleSignIn{
+    display: flex;
+    flex-direction: row;
+    background-color: #4285F4;
+    padding: 10px;
+    margin:10px;
+    border:none;
+    border-radius:5px ;
+    align-content: flex-start;
+   
+}
+
+.googleSignIn span{
+    color:white;
+    font-weight: bold;
+}
+
+.googleSignIn img{
+    background-color: white;
+    width: 15px;
+}
